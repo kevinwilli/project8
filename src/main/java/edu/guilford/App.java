@@ -46,13 +46,13 @@ public class App {
             }
             Collections.sort(wordCounts);
 
-            // // Write the list of word counts to a file
-            // try (PrintWriter writer = new PrintWriter(new
-            // FileWriter("resources/wordCounts.txt"))) {
-            // for (WordCount wc : wordCounts) {
-            // writer.println(wc.word + " " + wc.count);
-            // }
-            // }
+            // Write the list of word counts to a file
+            try (PrintWriter writer = new PrintWriter(new
+            FileWriter("C:/Users/Utilisateur/OneDrive/Bureau/CTIS310/GitHub/project8/src/main/resources/uniqueWords.txt"))) {
+            for (WordCount wc : wordCounts) {
+            writer.println(wc.word + " " + wc.count);
+            }
+            }
 
             // Prompt the user for a word and report the number of occurrences
             Scanner scanner = new Scanner(System.in);
